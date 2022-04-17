@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    background-color: #eee;
+    width: 90%;
+    height: 120vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper aside {
+    width: 25%;
+    height: 100%;
+}
+
+.wrapper aside .box {
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper aside .box.box1 {
+    background-image: linear-gradient(40deg, blue, purple, orange);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.wrapper aside .box.box2 {
+    padding: 20px;
+}
+
+.wrapper aside .box.box2 span {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper aside .box.box2 span.A {
+    background-color: blue;
+}
+
+.wrapper aside .box.box2 span.A:hover {
+    background-color: rgb(117, 117, 153);
+}
+
+.wrapper aside .box.box2 span:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.wrapper aside .box.box3 {
+    padding: 20px;
+}
+
+.wrapper aside .box.box3 .road {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper aside .box.box3 .planned {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.wrapper aside .box.box3 .planned .signed {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper aside .box.box3 .planned .signed p {
+    width: 80%;
+}
+
+.wrapper aside .box.box3 .planned .signed .bullet {
+    background-color: rgb(92, 9, 23);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: block;
+}
+
+.wrapper aside .box.box3 .planned .signed .bullet.purple {
+    background-color: purple;
+}
+
+.wrapper aside .box.box3 .planned .signed .bullet.green {
+    background-color: green;
+}
+
+.wrapper main {
+    width: 72%;
+    height: 120px;
+}
+
+.wrapper main .box {
+    background-color: #fff;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper main .box.box1 {
+    background-color: rgb(5, 5, 99);
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper main .box.box1 .suggest.icon {
+    display: flex;
+    width: 100%px;
+}
+
+.wrapper main .box.box1 .suggest,
+.wrapper main .box.box1 .sort {
+    color: #fff;
+}
+
+.wrapper main .box.box1 .sort .st {
+    color: gray;
+}
+
+.wrapper main .box.box1 .feedback a {
+    background-color: purple;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapper main .box.box2 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box2 .solution {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box2 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box2 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box2 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box2 .solution .add h2,
+.wrapper main .box.box2 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box2 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+    /* font-size: 14px; */
+}
+
+.wrapper main .box.box2 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box2 .message p {
+    font-weight: bold;
+}
+
+.wrapper main .box.box3 {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box3 .solution {
+    display: flex;
+    justify-content: space-between;
+    /* width: 50%; */
+}
+
+.wrapper main .box.box3 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box3 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box3 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box3 .solution .add h2,
+.wrapper main .box.box3 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box3 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper main .box.box3 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box3 .message p {
+    font-weight: bold;
+}
+
+.wrapper main .box.box4 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box4 .solution {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box4 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box4 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box4 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box4 .solution .add h2,
+.wrapper main .box.box4 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box4 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper main .box.box4 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box4 .message p {
+    font-weight: bold;
+}
+
+.wrapper main .box.box5 {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box5 .solution {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box5 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box5 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box5 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box5 .solution .add h2,
+.wrapper main .box.box5 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box5 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper main .box.box5 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box5 .message p {
+    font-weight: bold;
+}
+
+.wrapper main .box.box6 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box6 .solution {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box6 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box6 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box6 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box6 .solution .add h2,
+.wrapper main .box.box6 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box6 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper main .box.box6 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box6 .message p {
+    font-weight: bold;
+}
+
+.wrapper main .box.box7 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box7 .solution {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.wrapper main .box.box7 .solution .tag {
+    background-color: rgb(117, 117, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box7 .solution .tag .icon {
+    color: rgb(18, 18, 181);
+    font-weight: bold;
+}
+
+.wrapper main .box.box7 .solution .tag p {
+    color: rgb(2, 2, 40);
+    font-weight: bold;
+}
+
+.wrapper main .box.box7 .solution .add h2,
+.wrapper main .box.box7 .solution .add p {
+    margin-bottom: 7px;
+}
+
+.wrapper main .box.box7 .solution .add a {
+    background-color: rgb(117, 117, 153);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper main .box.box7 .message {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper main .box.box7 .message p {
+    font-weight: bold;
+}
